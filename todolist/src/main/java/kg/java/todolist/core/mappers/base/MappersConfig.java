@@ -2,6 +2,7 @@ package kg.java.todolist.core.mappers.base;
 
 import kg.java.todolist.core.mappers.CategoryMapper;
 import kg.java.todolist.core.mappers.PriorityMapper;
+import kg.java.todolist.core.mappers.TaskMapper;
 import kg.java.todolist.core.mappers.UserMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,6 +22,11 @@ public class MappersConfig {
     @Bean
     public PriorityMapper buildPriorityMapper() {
         return new PriorityMapper();
+    }
+
+    @Bean
+    public TaskMapper buildTaskMapper() {
+        return new TaskMapper();
     }
 
 }
